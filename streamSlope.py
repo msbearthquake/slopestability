@@ -5,8 +5,8 @@ import pandas  as pd; import pickle
 import os
 
 
-filename1 = 'https://github.com/msbearthquake/slopestability-/blob/main/Capture1.PNG'
-filename2 = 'https://github.com/msbearthquake/slopestability-/blob/main/Capture2.PNG'
+filename1 = 'https://raw.githubusercontent.com/msbearthquake/slopestability-/main/Capture1.PNG'
+filename2 = 'https://raw.githubusercontent.com/msbearthquake/slopestability-/main/Capture2.PNG'
 
 st.title('Slope stability prediction under seismic conditions')
 with st.container():
@@ -52,7 +52,7 @@ with st.container():
 
 # st.write(trainx)
 
-filename3 = 'https://github.com/msbearthquake/slopestability-/blob/main/Capture3.PNG'
+filename3 = 'https://raw.githubusercontent.com/msbearthquake/slopestability-/main/Capture3.PNG'
 
 
 with st.container():
