@@ -33,7 +33,7 @@ filename3 = 'finalized_model.sav'
 with st.container():
 
     if st.button('Run'):
-        if SHV!=0 and CV>15:
+        if SHV!=0 and CV>=15:
             loaded_model = pickle.load(open(filename3, 'rb'))
 
             yhat1 = loaded_model.predict(inputvec.reshape(1,-1))
@@ -42,7 +42,7 @@ with st.container():
             else:
                 resu = "True"   
 
-            st.write("Is slope stable? " , resu, "m")
+            st.write("Is slope stable? Answer:" , resu)
         elif (SHV==0):
             st.write("Slope height should not be zero.")
         elif(AIV<15 or CV<15 or FAV<15):
